@@ -6,6 +6,7 @@ from glob import glob
 
 exclude = set(string.punctuation)
 
+# Token to unique rgb hashing
 def color_hash(sequence):
 	tokens = list(set(sequence))
 	colormap = {}
