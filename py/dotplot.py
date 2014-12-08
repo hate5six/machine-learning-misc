@@ -1,6 +1,7 @@
 import Image
 import string
 import sys
+import os
 import hashlib
 from glob import glob
 
@@ -37,7 +38,7 @@ def generate_dp(sequence, outpath):
 
 # Batch run over all text files in an input directory
 def run():
-	files = glob("%s\\*.txt" % sys.argv[1])	
+	files = glob(os.path.join(sys.argv[1], "*.txt"))
 	for f in files:
 		sequence = read_file(f)
 		outpath = f.split('.')[0]
