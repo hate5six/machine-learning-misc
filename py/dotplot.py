@@ -1,4 +1,4 @@
-import Image
+from PIL import Image
 import string
 import sys
 import os
@@ -33,7 +33,7 @@ def generate_dp(sequence, outpath):
 	for i in range(N):
 		for j in range(N):
 			if sequence[i]==sequence[j]:
-				pixels[i, N-j-1] = colormap[sequence[i]]
+				pixels[i, N-j-1] = (1,1,1) #colormap[sequence[i]]
 	img.save(outpath+".png")
 
 # Batch run over all text files in an input directory
