@@ -1,0 +1,17 @@
+name: dplot
+channels: !!python/tuple
+- defaults
+dependencies:
+- certifi=2016.2.28=py27_0
+- pip=9.0.1=py27_1
+- python=2.7.13=1
+- setuptools=36.4.0=py27_0
+- vs2008_runtime=9.00.30729.5054=0
+- wheel=0.29.0=py27_0
+- wincertstore=0.2=py27_0
+- pip:
+  - django==1.11.5
+  - image==1.5.15
+  - olefile==0.44
+  - pillow==4.2.1
+  - pytz==2017.2
